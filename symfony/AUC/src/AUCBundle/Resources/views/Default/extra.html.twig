@@ -1,0 +1,48 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+<div id="fh5co-tours" class="fh5co-section-gray">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+			<h3>Actividades extra</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+			<div href="#"><img src="images/ingles.jpg" class="img-responsive">
+				<div class="desc">
+					<span></span>
+					<h3>Clases de inglés</h3>
+					<span>Lunes y miércoles ó martes y jueves</span>
+					<a class="btn btn-primary btn-outline" href="{{ asset('/contacto') }}">Más información <i class="icon-arrow-right22"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+			<div href="#"><img src="images/yoga.jpg" class="img-responsive">
+				<div class="desc">
+					<span></span>
+					<h3>Yoga</h3>
+					<span>Lunes y miércoles ó miércoles y viernes</span>
+					<a class="btn btn-primary btn-outline" href="{{ asset('/contacto') }}">Más información <i class="icon-arrow-right22"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+			<div href="#"><img src="images/repaso.jpg" class="img-responsive">
+				<div class="desc">
+					<span></span>
+					<h3>Repaso</h3>
+					<span>Cualquier día de la semana incluso findes</span>
+					<a class="btn btn-primary btn-outline" href="{{ asset('/contacto') }}">Más información<i class="icon-arrow-right22"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-12 text-center animate-box">
+			<p><a class="btn btn-primary btn-outline btn-lg" href="contacto.html">Contacta con nosotros <i class="icon-arrow-right22"></i></a></p>
+		</div>
+	</div>
+</div>
+</div>
+
+{% endblock %}

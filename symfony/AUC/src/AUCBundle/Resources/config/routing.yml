@@ -1,0 +1,27 @@
+auc_homepage:
+    path:     /
+    defaults: { _controller: AUCBundle:Default:index }
+
+auc_futbol_convencional:
+    path:     /futbol_convencional
+    defaults: { _controller: AUCBundle:Default:futbolconvencional }
+
+auc_futbol_silla:
+    path:     /futbol_silla_ruedas
+    defaults: { _controller: AUCBundle:Default:futbolsilla }
+
+auc_extra:
+    path:     /actividades_extra
+    defaults: { _controller: AUCBundle:Default:extra }
+
+auc_futbol_once:
+    path:     /futbol/once
+    defaults: { _controller: AUCBundle:Default:futbolonce }
+
+auc_contacto:
+    path:     /contacto
+    defaults: { _controller: AUCBundle:Default:contacto }
+
+auc_quienes:
+    path:     /quienesSomos
+    defaults: { _controller: AUCBundle:Default:quienes }
