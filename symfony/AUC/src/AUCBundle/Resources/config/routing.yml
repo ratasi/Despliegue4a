@@ -18,10 +18,29 @@ auc_futbol_once:
     path:     /futbol/once
     defaults: { _controller: AUCBundle:Default:futbolonce }
 
+auc_equipo:
+    path:     /futbol/equipo/{id_equipo}
+    defaults: { _controller: AUCBundle:Equipos:equipo, id_equipo:1 }
+
+auc_register_admin:
+    path:     /admin/register
+    defaults: { _controller: AUCBundle:Admin:register }
+
+auc_login_admin:
+    path:     /admin
+    defaults: { _controller: AUCBundle:Admin:login }
+
+auc_logout_admin:
+    path:     /admin/logout
+
 auc_contacto:
     path:     /contacto
     defaults: { _controller: AUCBundle:Default:contacto }
 
 auc_quienes:
-    path:     /quienesSomos
-    defaults: { _controller: AUCBundle:Default:quienes }
+    path:     /nosotros
+    defaults: { _controller: AUCBundle:Default:nosotros }
+
+auc_adaptado:
+    path:     /futbol_adaptado
+    defaults: { _controller: AUCBundle:Default:adaptado }

@@ -30,8 +30,13 @@ class DefaultController extends Controller
     {
         return $this->render('AUCBundle:Default:extra.html.twig');
     }
-    public function quienesAction()
+
+    public function nosotrosAction()
     {
         return $this->render('AUCBundle:Default:quienes.html.twig');
+    }
+    public function adaptadoAction()
+    {
+        return $this->render('AUCBundle:Default:futboladaptado.html.twig');
     }
 }

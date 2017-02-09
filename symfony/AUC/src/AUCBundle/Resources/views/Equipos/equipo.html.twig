@@ -1,0 +1,37 @@
+        {% extends '::base.html.twig' %}
+        {% block body %}
+        <div class="panel panel-default">
+        <div class="panel-heading"><h1>Listado De Jugadores {{ equipo.nombre }}</h1></div><br>
+        <table class="table">
+            <tr>
+                <th><b>Nombre</b></th>
+                <th><b>Apellidos</b></th>
+                <th><b>Posición</b></th>
+            </tr>
+        {% for jugador in equipo.jugador %}
+            <tr>
+                <td>{{ jugador.nombre }}</td>
+                <td>{{ jugador.apellidos }}</td>
+                <td>{{ jugador.posicion }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        </div>
+
+        <div class="panel panel-default">
+        <table class="table">
+            <tr>
+                <th><b>Nombre</b></th>
+                <th><b>Apellidos</b></th>
+                <th><b>Titulaciones</b></th>
+                <th><b>Telefono</b></th>
+            </tr>
+            <tr>
+                <td>{{ equipo.entrenador.nombre }}</td>
+                <td>{{ equipo.entrenador.apellidos }}</td>
+                <td>{{ equipo.entrenador.titulaciones }}</td>
+                <td>{{ equipo.entrenador.telefono1 }}</td>
+            </tr>
+        </table>
+        </div>
+        {% endblock %}
